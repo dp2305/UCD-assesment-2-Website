@@ -1,0 +1,201 @@
+* {
+   box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+}
+
+/* ====================
+   Root Variables
+   ==================== */
+:root{
+   --text-colour: #36454F;
+   --base-colour: #fcf9ec;
+   --accent-1: #008080;
+   --accent-2:#E57F3D;
+}
+
+/* ====================
+   Body + Font Styles
+   ==================== */
+body {
+   font-family: "Poetsen One";
+   color: var(--text-colour);
+   margin: auto;
+   overflow-x: hidden;
+   width: 1200px;
+}
+
+h1 {
+   font-family: "Permanent Marker";
+}
+
+p {
+   font-family: "Ysabeau SC";
+}
+
+/* ====================
+   Header Styles
+   ==================== */
+header {
+   background-color: var(--accent-1);
+   padding: 5px 15px;
+   border-radius: 0px 0px 10px 10px;
+}
+
+nav {
+   align-items: center;
+   justify-content: space-between;
+   display: flex;
+}
+
+.nav-left, .nav-right {
+   align-items: center;
+   display: flex;
+   gap: 20px;
+}
+
+.nav-left select,
+.nav-right input {
+   padding: 5px;
+}
+
+.logo {
+   width: 40px;
+}
+
+/* ====================
+   Home Page Styles
+   ==================== */
+.home-content {
+   background-color: var(--base-colour);
+   padding: 50px;
+   height: 600px
+}
+
+.home-section-left {
+   float: left;
+}
+
+.home-content-left {
+   font-size: 40px;
+   height: 400px;
+   width: 600px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 60px;
+}
+
+.home-content-left h1 {
+   color: var(--accent-2);
+}
+
+.home-content-left h2 {
+   color: var(--accent-1);
+}
+
+.home-content-right {
+   float: right;
+}
+
+.home-main-image {
+   width: 500px;
+   border-radius: 500px;
+   filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.1));
+}
+
+/* ====================
+   Pets Page Styles
+   ==================== */
+.pets-content {
+   height: 450px;
+}
+
+.pets-section-top {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin: 20px 0px;
+}
+
+.pets-table {
+   border: 1px solid black;
+   font-family: "Ysabeau SC";
+}
+
+.pets-table-header {
+   background-color: var(--base-colour);
+   color: var(--accent-1);
+}
+
+.pets-table td {
+   padding-right: 60px;
+}
+
+.pets-content-left {
+   float: left;
+}
+.pets-content-right {
+   float: right;
+}
+
+/* ====================
+   Gallery Page Styles
+   ==================== */
+.gallery-content {
+   padding: 40px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.gallery-section-top {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-bottom: 30px;
+}
+
+.gallery-section-bottom {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.gallery-content-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 300px;
+   margin: 20px;
+   border: 0.1px solid black;
+   border-radius: 20px;
+}
+
+.gallery-content-card-image img{
+   width: 100%;
+   border-radius: 20px 20px 0px 0px;
+   transition: all 0.3s ease;
+}
+
+.gallery-content-card:hover img{
+   opacity: 0.5;
+}
+
+.gallery-content-card-text {
+   text-align: center;
+   border-radius: 0px 0px 20px 20px;
+   padding: 15px;
+}
+
+/* ====================
+   Footer Styles
+   ==================== */
+footer {
+   padding: 35px;
+   text-align: center;
+   background-color: var(--accent-2);
+   border-radius: 10px;
+}
