@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Style.css">
     <meta charset="UTF-8">
-    <title>UCD Assesment 2 Website</title>
+    <meta name="viewport" content="width=1200">
+    <title>PETS VICTORIA | Welcome to Pet Adoption</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ysabeau+SC:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poetsen+One&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Common Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-    <div class="topnav">
-
-        <img class="new" src="images/logo.png" alt="mk4 supra" width="200" >
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-    </div>
-    <script src="main.js"></script>
-    </body>
+<body>
+<div class="container">
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Pets Victoria Logo" class="logo">
+            </a>
+            <select aria-label="Options" class="nav-select">
+                <option>Select an Option...</option>
+                <option>Adopt</option>
+                <option>About</option>
+                <option>Contact</option>
+            </select>
+            <form class="search-form" action="#" method="get">
+                <label for="search" class="material-icons" aria-label="Search Icon">search</label>
+                <input type="text" id="search" name="search" placeholder="Search">
+            </form>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <div class="welcome-text">
+                <h1>PETS VICTORIA</h1>
+                <h2>WELCOME TO PET ADOPTION</h2>
+            </div>
+            <img src="images/main.jpg" alt="Dog and Cat" class="main-image">
+        </section>
+    </main>
+    <footer>
+        <small>&copy; Copyright 5123456. All Rights Reserved | Designed for Pets Victoria | By Dutt Patel s4172049 </small>
+    </footer>
+</div>
+</body>
 </html>
